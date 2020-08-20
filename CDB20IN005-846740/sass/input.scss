@@ -1,0 +1,215 @@
+$font:Calibri;
+$width:100%;
+$color:#333;
+$marginAuto:0px auto;
+$white:#fff;
+
+
+::selection{
+    background-color:#eee;
+}
+
+#page{
+    font-family: base.$font;
+    width:$width;
+
+header{
+    display: block;
+    width: 100%;
+    height: 70px;
+    background: $color;
+    #header{
+        margin: $marginAuto;
+        width: $fixedWidth;
+        display: flex;
+        @extend  %display-between-center;
+        height:70px;
+        .logo{
+            font-size: 48px;
+            color: $white; 
+        }
+        ul{
+            color: $white;
+            display: flex;
+            flex-direction: row;
+            li{
+                padding: 0px 0px 0px 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#menu-search{
+    width:  $fixedWidth;
+    margin: $marginAuto; 
+    height:60px;
+    color: $color;
+    @extend  %display-between-center;
+    ul{
+        display: flex;
+        font-size: 16px;
+        flex-direction: row;
+        li{
+            margin-right:10px;
+            cursor: pointer;
+            border: 1px solid black;
+            padding: 10px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#slider-wrapper{
+    min-height: 350px;
+    background: $white;
+    .slider{
+        width: 90%;
+        margin: 0px auto;
+        min-height: 350px;
+        display: flex;
+        flex-direction: row;
+        @extend %display-between-center;  
+    }
+    .title{
+        width:60%;
+        font-size:58px;
+        background: url("../images/mask.png") no-repeat;
+        box-sizing: border-box;
+        height:179px;
+        text-transform:uppercase;
+        display: flex;
+        flex-direction: row;
+        @extend %display-between-center;      
+    }
+    .content{
+        width: 40%; 
+        font-size: 18px;
+        color:$black;
+        ul{
+            padding:0 !important;
+            margin:0 !important;
+            li{
+                padding:0px 0px 10px 0px
+             }
+         }
+    }
+}
+
+#offers-catagory{
+    width:$fixedWidth;
+    margin: $marginAuto;
+    ul{
+        width: $fixedWidth;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size:1.5em;
+        @extend %display-between-center;   
+        li{
+            width:33.3%;
+            padding:20px 0px 20px 0px;
+            p{
+                border-right:2px solid $color;
+                padding-bottom:20px;
+             }
+             span{
+                font-size:2em;
+                padding-left:12px;
+                background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+             }
+             i{
+                position: absolute;
+                margin-top:7px;
+             }
+             p.removeBorder{
+                border-right:0px !important;
+             }
+             + span{
+                font-size:16px;
+             }
+        
+        }         
+}
+#fashion-catagory {width: 90%;margin: $marginAuto;}
+#fashion-catagory h1{
+    padding-top:20px;
+    font-size:1.5em;
+    &::first-letter{
+        font-weight: bold;
+        font-size:2em;
+      ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:20px 0px 40px 0px;
+        @extend %display-space-between;   
+        &:last-child{
+            margin-top:0px;
+            li{
+                width:$fixedWidth;
+                height:230px;
+                background: $color;
+                padding-top:5px;
+                box-sizing: border-box;
+                text-align: center;
+            }
+        }
+     }
+}
+}
+
+#product-catagory{
+    width: 90%;
+    margin: $marginAuto;
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li{
+            padding: 0px 10px 0px 10px;
+            border-right: 1px solid #333;
+            margin: 5px 0px 5px 0px;
+            cursor: pointer;
+            &:last-child{
+                border-right: 0px solid #333;
+            }
+         
+         }
+       
+    }
+}
+
+footer{
+    display: block;
+    background: #131a22;
+    min-height: 300px;
+    margin-top: 35px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    #footer{
+        width: 90%;
+        margin: $marginAuto;
+        display: flex;
+        flex-direction: row;
+        section{
+            width:25%;
+            color:#fff;
+            h2{
+                font-size:1.5em;
+                font-weight: normal;
+             }
+             ul{
+                padding-top:15px;
+                li{
+                    font-size:16px;
+                    padding:5px 0px 5px 0px;
+                 }
+              }
+        }
+    }
+}

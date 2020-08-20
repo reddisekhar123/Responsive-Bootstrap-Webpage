@@ -1,0 +1,16 @@
+$font:Calibri;
+$width:100%;
+$color:#333;
+$marginAuto:0px auto;
+$white:#fff;
+
+
+::selection{
+    background-color:#eee;
+}
+
+#page{
+    font-family: base.$font;
+    width:$width;
+}
+

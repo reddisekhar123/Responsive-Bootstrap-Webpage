@@ -1,0 +1,47 @@
+
+@media only screen and (max-width: 1200px) {
+     
+}
+
+@media only screen and (max-width: 1024px) {
+     #slider-wrapper .slider .title{
+       justify-content:flex-end;
+       background-size:120px 120px;
+       background-position: left center;
+    }
+   
+    #fashion-catagory ul li:last-child{display: none;}
+}
+@media only screen and (max-width: 768px) {
+    header #header ul{display: none}
+    .topNav{display: block }
+    #sliderMenu{ right: 0;}
+    #menu-search{display: none;}
+    #slider-wrapper .slider .title{ background-image:none}
+    #fashion-catagory ul li{ 
+        margin-bottom:20px;
+   }
+   
+    
+} 
+@media only screen and (max-width: 480px) {
+    header ul{display: none}
+    .topNav{display: block }
+    #sliderMenu{ right: 0;}
+    #menu-search{display: none;}
+    #fashion-catagory ul{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    #fashion-catagory ul li{ 
+         margin-bottom:20px;
+    }
+    footer #footer{
+        flex-wrap: wrap;
+    }
+    footer #footer section{
+        width:50%;
+    }
+    
+} 
